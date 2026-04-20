@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Гаражная Мастерская — Изделия из металла на заказ</title>
+  <meta name="description" content="Мангалы, барбекю-станции, ограды из металла на заказ. Ручная работа, термостойкое покрытие, мраморные столешницы. Звоните: +7 (982) 687-50-07" />
+  <meta name="theme-color" content="#0d0d0d" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="19SQFciqq1-kU_FMhZ9tPbyW7jFvJPoGBtoBoQzA40PhaurYk1lkvdCO-9lqwujENE1hll4blCs3qmTXI8adPgdt.jpg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <div class="logo">
+        <span class="logo__icon">⚒</span>
+        <span class="logo__text">ГАРАЖНАЯ <strong>МАСТЕРСКАЯ</strong></span>
+      </div>
+      <nav class="nav">
+        <a href="#about">О нас</a>
+        <a href="#catalog">Работы</a>
+        <a href="#advantages">Преимущества</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <button class="btn btn--outline" onclick="openOrderModal()">Заказать</button>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#about" onclick="closeMenu()">О нас</a>
+      <a href="#catalog" onclick="closeMenu()">Работы</a>
+      <a href="#advantages" onclick="closeMenu()">Преимущества</a>
+      <a href="#contact" onclick="closeMenu()">Контакты</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="container hero__content">
+      <p class="hero__label">Ручная работа · Металл · Надёжность</p>
+      <h1 class="hero__title">Изделия из металла<br /><span>на заказ</span></h1>
+      <p class="hero__sub">Мангалы, барбекю-станции, ограды и другие металлоконструкции. Изготавливаем под ваши размеры и пожелания.</p>
+      <div class="hero__actions">
+        <a href="#catalog" class="btn btn--primary">Смотреть работы</a>
+        <button class="btn btn--ghost" onclick="openOrderModal()">Получить консультацию</button>
+      </div>
+    </div>
+    <div class="hero__scroll"><span></span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container about__inner">
+      <div class="about__text">
+        <p class="section__label">О мастерской</p>
+        <h2 class="section__title">Делаем с душой<br />и точностью</h2>
+        <p>Мы — небольшая мастерская с большим опытом. Каждое изделие создаётся вручную: от эскиза до финальной покраски. Работаем с металлом, используем качественные материалы и современные технологии сварки.</p>
+        <p>Принимаем заказы любой сложности — от простого мангала до полноценной уличной кухни с мраморными столешницами.</p>
+        <div class="about__stats">
+          <div class="stat"><span class="stat__num">200+</span><span class="stat__label">выполненных заказов</span></div>
+          <div class="stat"><span class="stat__num">5+</span><span class="stat__label">лет опыта</span></div>
+          <div class="stat"><span class="stat__num">100%</span><span class="stat__label">ручная работа</span></div>
+        </div>
+      </div>
+      <div class="about__img">
+        <img src="AbWHnTd9eUSB1MCZytT8i_vRMv-XBaMBSEjlLOFKeXnQZYdxoacRWaLpuqqF2gR0P2RQhHDt9JKSBf6GCnhch38L.jpg"
+             alt="Уличная барбекю-кухня" loading="lazy" decoding="async" width="600" height="500" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CATALOG -->
+  <section class="catalog section" id="catalog">
+    <div class="container">
+      <p class="section__label">Наши работы</p>
+      <h2 class="section__title">Каталог изделий</h2>
+      <div class="catalog__grid">
+
+        <div class="card">
+          <div class="card__img">
+            <img src="19SQFciqq1-kU_FMhZ9tPbyW7jFvJPoGBtoBoQzA40PhaurYk1lkvdCO-9lqwujENE1hll4blCs3qmTXI8adPgdt.jpg"
+                 alt="Мангал с мраморной столешницей" loading="lazy" decoding="async" width="400" height="240" />
+            <span class="card__tag">Мангалы</span>
+          </div>
+          <div class="card__body">
+            <h3>Мангал с мраморной столешницей</h3>
+            <p>Мангал с тремя вставками из мрамора, решётчатыми полками для дров и посуды. Чаша из рифлёного металла. Покраска термостойкой эмалью.</p>
+            <button class="btn btn--sm" onclick="openOrderModal()">Заказать</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img">
+            <img src="iQkp3SFW1a7WbPnpmqGaCfZ9NA59A0pXIABcrq8x7sc1InQ7fBLvJTBG0dTE4Albpg9uUnKBjF28skHGKA11on4b.jpg"
+                 alt="Мангал на X-образных ножках" loading="lazy" decoding="async" width="400" height="240" />
+            <span class="card__tag">Мангалы</span>
+          </div>
+          <div class="card__body">
+            <h3>Мангал на X-образных ножках</h3>
+            <p>Стильный мангал с X-образной конструкцией ножек. Боковые полки из нержавеющей стали. Удобен в использовании.</p>
+            <button class="btn btn--sm" onclick="openOrderModal()">Заказать</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img">
+            <img src="AbWHnTd9eUSB1MCZytT8i_vRMv-XBaMBSEjlLOFKeXnQZYdxoacRWaLpuqqF2gR0P2RQhHDt9JKSBf6GCnhch38L.jpg"
+                 alt="Уличная барбекю-кухня" loading="lazy" decoding="async" width="400" height="240" />
+            <span class="card__tag">Кухни</span>
+          </div>
+          <div class="card__body">
+            <h3>Уличная барбекю-кухня</h3>
+            <p>Полноценная уличная кухня с мангалом, дымоходом, мраморной столешницей и декоративными дверцами с ромбовидным узором.</p>
+            <button class="btn btn--sm" onclick="openOrderModal()">Заказать</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img">
+            <img src="8l93MmqnclM53Z6habw7QfDiG-cpZEo5OQvXzncgs9CxNvfAmD968KX16KWQy1Lv1SQO9Yus4EH-XA6fnXEp-ptx.jpg"
+                 alt="Металлическая ограда" loading="lazy" decoding="async" width="400" height="240" />
+            <span class="card__tag">Ограды</span>
+          </div>
+          <div class="card__body">
+            <h3>Металлическая ограда</h3>
+            <p>Сварная ограда с декоративным ромбовидным узором. Покраска в чёрный цвет. Изготовление под любые размеры участка.</p>
+            <button class="btn btn--sm" onclick="openOrderModal()">Заказать</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img">
+            <img src="9dUjwF_cI4BlR6TbTWmDL6aCVqnnjmDk0VhfGK1sG6NcXemj_HZO_GmC-pA3hTV0FRFqwIeyIS-F3hgKlBWyO7of.jpg"
+                 alt="Мангал классический" loading="lazy" decoding="async" width="400" height="240" />
+            <span class="card__tag">Мангалы</span>
+          </div>
+          <div class="card__body">
+            <h3>Мангал классический</h3>
+            <p>Надёжный мангал с полками из нержавеющей стали, нижней полкой для дров и усиленной рамой. Подходит для дачи и загородного дома.</p>
+            <button class="btn btn--sm" onclick="openOrderModal()">Заказать</button>
+          </div>
+        </div>
+
+        <div class="card card--cta">
+          <div class="card__cta-inner">
+            <span class="card__cta-icon">✦</span>
+            <h3>Нужно что-то особенное?</h3>
+            <p>Изготовим по вашему эскизу или поможем разработать дизайн с нуля</p>
+            <button class="btn btn--primary" onclick="openOrderModal()">Обсудить проект</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ADVANTAGES -->
+  <section class="advantages section" id="advantages">
+    <div class="container">
+      <p class="section__label">Почему мы</p>
+      <h2 class="section__title">Наши преимущества</h2>
+      <div class="adv__grid">
+        <div class="adv__item"><div class="adv__icon">🔥</div><h4>Термостойкое покрытие</h4><p>Используем краску, выдерживающую температуру до 600°C. Изделие не облезет и не заржавеет.</p></div>
+        <div class="adv__item"><div class="adv__icon">📐</div><h4>Любые размеры</h4><p>Изготавливаем под ваши точные размеры. Привезём и установим на месте.</p></div>
+        <div class="adv__item"><div class="adv__icon">⚙️</div><h4>Качественная сварка</h4><p>Все швы ровные и прочные. Конструкции рассчитаны на многолетнюю эксплуатацию.</p></div>
+        <div class="adv__item"><div class="adv__icon">🪨</div><h4>Мраморные столешницы</h4><p>Используем натуральный и искусственный мрамор для столешниц — красиво и практично.</p></div>
+        <div class="adv__item"><div class="adv__icon">💬</div><h4>Работаем по фото</h4><p>Пришлите фото понравившегося изделия — повторим или сделаем лучше.</p></div>
+        <div class="adv__item"><div class="adv__icon">🚚</div><h4>Доставка и монтаж</h4><p>Доставляем по городу и области. Помогаем с установкой и сборкой на месте.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery section">
+    <div class="container">
+      <p class="section__label">Галерея</p>
+      <h2 class="section__title">Больше наших работ</h2>
+    </div>
+    <div class="gallery__strip">
+      <img src="CpcXvZzgW9Nu2IeOGF2puAmKEE5prOcW059_z2bgmcJJ6YEh8y2cQfhy_h_w1_ZTd_E_jP5ZHMkqGJ2bU5ubFU_Y.jpg" alt="Работа 1" loading="lazy" decoding="async" width="300" height="220" />
+      <img src="ijrIpOHnqgvr_fvN9n9tBThfrDlJgVo9BDo62tLEepCPOa5xAkAeYMQB4Bbm3CF1bHbwpTwgmGkgZadG1KwxMH-a.jpg" alt="Работа 2" loading="lazy" decoding="async" width="300" height="220" />
+      <img src="Jkm1ieLKsmcn-_P9MhBz1W8WO-1OoBHj15SeHAw6X5RXN0JXqrBrY6WfpQZ6759VL8s_D3jBIIgFIx91UAci8eIT.jpg" alt="Работа 3" loading="lazy" decoding="async" width="300" height="220" />
+      <img src="s2g_tkA_DwCs1IBCKqHWaLLl2zFtwM7fa_3nBNweRSxh5-nhvyzH_fxty9KE0eypNxZy_q9eh-oMmHZ-CGKT7f5y.jpg" alt="Работа 4" loading="lazy" decoding="async" width="300" height="220" />
+      <img src="yqLxb6Bc3ZXmY9ZTEoeI-u5S7JjkgW-uCsIE50gDWFcxsHMGwi70aAgHjkRZjNHWfRWe54nwzURRbkcrFge8I6gC.jpg" alt="Работа 5" loading="lazy" decoding="async" width="300" height="220" />
+      <img src="a359LbMsRxzOPtsDp9PmvpjWCLX6j4BUZ4oZIXEmLpWRE15vidzZkuWiecBcJAACJbNutKxAAyPtuq7ynSYAb3-0.jpg" alt="Работа 6" loading="lazy" decoding="async" width="300" height="220" />
+      <img src="EKaADIt1dCmBkRoeYpqcnNxZXBJI9TsYTtIiuxTW8FTrUCPKdkRqqnbx1X_aJPT8TP3MWUiST3089LTYtvv9LNLV.jpg" alt="Работа 7" loading="lazy" decoding="async" width="300" height="220" />
+      <img src="8l93MmqnclM53Z6habw7QfDiG-cpZEo5OQvXzncgs9CxNvfAmD968KX16KWQy1Lv1SQO9Yus4EH-XA6fnXEp-ptx.jpg" alt="Работа 8" loading="lazy" decoding="async" width="300" height="220" />
+      <img src="9dUjwF_cI4BlR6TbTWmDL6aCVqnnjmDk0VhfGK1sG6NcXemj_HZO_GmC-pA3hTV0FRFqwIeyIS-F3hgKlBWyO7of.jpg" alt="Работа 9" loading="lazy" decoding="async" width="300" height="220" />
+      <img src="19SQFciqq1-kU_FMhZ9tPbyW7jFvJPoGBtoBoQzA40PhaurYk1lkvdCO-9lqwujENE1hll4blCs3qmTXI8adPgdt.jpg" alt="Работа 10" loading="lazy" decoding="async" width="300" height="220" />
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__info">
+        <p class="section__label">Связаться с нами</p>
+        <h2 class="section__title">Обсудим ваш заказ</h2>
+        <p>Напишите или позвоните — расскажем о ценах, сроках и возможностях. Работаем быстро и честно.</p>
+        <div class="contact__links">
+          <a href="tel:+79826875007" class="contact__link">
+            <span class="contact__link-icon">📞</span>
+            <span>+7 (982) 687-50-07</span>
+          </a>
+          <a href="https://vk.com/id63243928" class="contact__link" target="_blank" rel="noopener noreferrer">
+            <span class="contact__link-icon">🔵</span>
+            <span>ВКонтакте</span>
+          </a>
+          <a href="https://t.me/KOSTAGYM96" class="contact__link" target="_blank" rel="noopener noreferrer">
+            <span class="contact__link-icon">✈️</span>
+            <span>Telegram: @KOSTAGYM96</span>
+          </a>
+        </div>
+      </div>
+      <form class="contact__form" onsubmit="handleSubmit(event)">
+        <h3>Оставить заявку</h3>
+        <div class="form__group"><input type="text" placeholder="Ваше имя" required autocomplete="name" /></div>
+        <div class="form__group"><input type="tel" placeholder="Номер телефона" required autocomplete="tel" /></div>
+        <div class="form__group">
+          <select>
+            <option value="" disabled selected>Что вас интересует?</option>
+            <option>Мангал</option>
+            <option>Барбекю-кухня</option>
+            <option>Ограда</option>
+            <option>Другое изделие</option>
+          </select>
+        </div>
+        <div class="form__group"><textarea placeholder="Опишите ваш заказ или задайте вопрос" rows="4"></textarea></div>
+        <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+        <p class="form__note">Ответим в течение 30 минут</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="logo">
+        <span class="logo__icon">⚒</span>
+        <span class="logo__text">ГАРАЖНАЯ <strong>МАСТЕРСКАЯ</strong></span>
+      </div>
+      <p>Изделия из металла на заказ · Ручная работа</p>
+      <p class="footer__copy">© 2024 Гаражная Мастерская. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox__close" onclick="closeLightbox()">✕</button>
+    <img id="lightboxImg" src="" alt="" decoding="async" />
+  </div>
+
+  <!-- ORDER MODAL -->
+  <div class="modal" id="orderModal" onclick="closeOrderModal(event)">
+    <div class="modal__box">
+      <button class="modal__close" onclick="closeOrderModal()">✕</button>
+      <div class="modal__icon">⚒</div>
+      <h2 class="modal__title">Связаться с нами</h2>
+      <p class="modal__sub">Выберите удобный способ — ответим быстро!</p>
+      <div class="modal__contacts">
+        <a href="tel:+79826875007" class="modal__contact-btn modal__contact-btn--phone">
+          <span class="modal__contact-icon">📞</span>
+          <div><span class="modal__contact-label">Позвонить</span><span class="modal__contact-value">+7 (982) 687-50-07</span></div>
+        </a>
+        <a href="https://t.me/KOSTAGYM96" target="_blank" rel="noopener noreferrer" class="modal__contact-btn modal__contact-btn--tg">
+          <span class="modal__contact-icon">✈️</span>
+          <div><span class="modal__contact-label">Telegram</span><span class="modal__contact-value">@KOSTAGYM96</span></div>
+        </a>
+        <a href="https://vk.com/id63243928" target="_blank" rel="noopener noreferrer" class="modal__contact-btn modal__contact-btn--vk">
+          <span class="modal__contact-icon">🔵</span>
+          <div><span class="modal__contact-label">ВКонтакте</span><span class="modal__contact-value">vk.com/id63243928</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

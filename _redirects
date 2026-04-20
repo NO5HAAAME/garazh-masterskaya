@@ -1,0 +1,2 @@
+# Принудительный HTTPS
+http://garazh-masterskaya.netlify.app/* https://garazh-masterskaya.netlify.app/:splat 301!

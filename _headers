@@ -1,0 +1,25 @@
+# Netlify headers — кэширование и сжатие
+
+# Фотографии — кэш на 1 год (они не меняются)
+/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+
+# CSS и JS — кэш на 1 год
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML — без кэша, всегда свежий
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Безопасность
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
