@@ -87,68 +87,115 @@
       <h2 class="section__title">Каталог изделий</h2>
       <div class="catalog__grid">
 
-        <div class="card">
+        <div class="card" onclick="openProductModal('mangal-mramor')">
           <div class="card__img">
             <img src="19SQFciqq1-kU_FMhZ9tPbyW7jFvJPoGBtoBoQzA40PhaurYk1lkvdCO-9lqwujENE1hll4blCs3qmTXI8adPgdt.jpg"
                  alt="Мангал с мраморной столешницей" loading="lazy" decoding="async" width="400" height="240" />
             <span class="card__tag">Мангалы</span>
+            <span class="card__gallery-hint">📷 Смотреть фото</span>
           </div>
           <div class="card__body">
             <h3>Мангал с мраморной столешницей</h3>
             <p>Мангал с тремя вставками из мрамора, решётчатыми полками для дров и посуды. Чаша из рифлёного металла. Покраска термостойкой эмалью.</p>
-            <button class="btn btn--sm" onclick="openOrderModal()">Заказать</button>
+            <button class="btn btn--sm" onclick="event.stopPropagation(); openOrderModal()">Заказать</button>
           </div>
         </div>
 
-        <div class="card">
+        <div class="card" onclick="openProductModal('mangal-x')">
           <div class="card__img">
             <img src="iQkp3SFW1a7WbPnpmqGaCfZ9NA59A0pXIABcrq8x7sc1InQ7fBLvJTBG0dTE4Albpg9uUnKBjF28skHGKA11on4b.jpg"
                  alt="Мангал на X-образных ножках" loading="lazy" decoding="async" width="400" height="240" />
             <span class="card__tag">Мангалы</span>
+            <span class="card__gallery-hint">📷 Смотреть фото</span>
           </div>
           <div class="card__body">
             <h3>Мангал на X-образных ножках</h3>
             <p>Стильный мангал с X-образной конструкцией ножек. Боковые полки из нержавеющей стали. Удобен в использовании.</p>
-            <button class="btn btn--sm" onclick="openOrderModal()">Заказать</button>
+            <button class="btn btn--sm" onclick="event.stopPropagation(); openOrderModal()">Заказать</button>
           </div>
         </div>
 
-        <div class="card">
+        <div class="card" onclick="openProductModal('bbq')">
           <div class="card__img">
             <img src="AbWHnTd9eUSB1MCZytT8i_vRMv-XBaMBSEjlLOFKeXnQZYdxoacRWaLpuqqF2gR0P2RQhHDt9JKSBf6GCnhch38L.jpg"
                  alt="Уличная барбекю-кухня" loading="lazy" decoding="async" width="400" height="240" />
             <span class="card__tag">Кухни</span>
+            <span class="card__gallery-hint">📷 Смотреть фото</span>
           </div>
           <div class="card__body">
             <h3>Уличная барбекю-кухня</h3>
             <p>Полноценная уличная кухня с мангалом, дымоходом, мраморной столешницей и декоративными дверцами с ромбовидным узором.</p>
-            <button class="btn btn--sm" onclick="openOrderModal()">Заказать</button>
+            <button class="btn btn--sm" onclick="event.stopPropagation(); openOrderModal()">Заказать</button>
           </div>
         </div>
 
-        <div class="card">
+        <div class="card" onclick="openProductModal('grill-ballona')">
+          <div class="card__img">
+            <img src="CpcXvZzgW9Nu2IeOGF2puAmKEE5prOcW059_z2bgmcJJ6YEh8y2cQfhy_h_w1_ZTd_E_jP5ZHMkqGJ2bU5ubFU_Y.jpg"
+                 alt="Гриль-смокер из газового баллона" loading="lazy" decoding="async" width="400" height="240" />
+            <span class="card__tag">Грили</span>
+            <span class="card__gallery-hint">📷 Смотреть фото</span>
+          </div>
+          <div class="card__body">
+            <h3>Гриль-смокер из баллона</h3>
+            <p>Гриль из газового баллона с откидной крышкой, решёткой из нержавейки и боковыми столешницами из массива дерева.</p>
+            <button class="btn btn--sm" onclick="event.stopPropagation(); openOrderModal()">Заказать</button>
+          </div>
+        </div>
+
+        <div class="card" onclick="openProductModal('ograda')">
           <div class="card__img">
             <img src="8l93MmqnclM53Z6habw7QfDiG-cpZEo5OQvXzncgs9CxNvfAmD968KX16KWQy1Lv1SQO9Yus4EH-XA6fnXEp-ptx.jpg"
                  alt="Металлическая ограда" loading="lazy" decoding="async" width="400" height="240" />
             <span class="card__tag">Ограды</span>
+            <span class="card__gallery-hint">📷 Смотреть фото</span>
           </div>
           <div class="card__body">
             <h3>Металлическая ограда</h3>
             <p>Сварная ограда с декоративным ромбовидным узором. Покраска в чёрный цвет. Изготовление под любые размеры участка.</p>
-            <button class="btn btn--sm" onclick="openOrderModal()">Заказать</button>
+            <button class="btn btn--sm" onclick="event.stopPropagation(); openOrderModal()">Заказать</button>
           </div>
         </div>
 
-        <div class="card">
+        <div class="card" onclick="openProductModal('ograda-3x3')">
+          <div class="card__img">
+            <img src="Ograda1.jpg"
+                 alt="Ограда 3×3м с калиткой" loading="lazy" decoding="async" width="400" height="240" />
+            <span class="card__tag">Ограды</span>
+            <span class="card__gallery-hint">📷 Смотреть фото</span>
+          </div>
+          <div class="card__body">
+            <h3>Ограда 3×3м с калиткой</h3>
+            <p>Металлическая ограда 3×3м с ромбовидным узором, калиткой с крестом и золотистыми заклёпками. Покраска в чёрный матовый цвет.</p>
+            <button class="btn btn--sm" onclick="event.stopPropagation(); openOrderModal()">Заказать</button>
+          </div>
+        </div>
+
+        <div class="card" onclick="openProductModal('mangal-klassik')">
           <div class="card__img">
             <img src="9dUjwF_cI4BlR6TbTWmDL6aCVqnnjmDk0VhfGK1sG6NcXemj_HZO_GmC-pA3hTV0FRFqwIeyIS-F3hgKlBWyO7of.jpg"
                  alt="Мангал классический" loading="lazy" decoding="async" width="400" height="240" />
             <span class="card__tag">Мангалы</span>
+            <span class="card__gallery-hint">📷 Смотреть фото</span>
           </div>
           <div class="card__body">
             <h3>Мангал классический</h3>
             <p>Надёжный мангал с полками из нержавеющей стали, нижней полкой для дров и усиленной рамой. Подходит для дачи и загородного дома.</p>
-            <button class="btn btn--sm" onclick="openOrderModal()">Заказать</button>
+            <button class="btn btn--sm" onclick="event.stopPropagation(); openOrderModal()">Заказать</button>
+          </div>
+        </div>
+
+        <div class="card" onclick="openProductModal('stellazh')">
+          <div class="card__img">
+            <img src="Na2T6UrS9_F9q59QQaCkP6KL4ww-qu7XkslJGxm-PsJ11ujOZlX1SzXI379u8xWuZUOtrJKKs2LB9F0SQfHYJsh7.jpg"
+                 alt="Стеллаж для колёс" loading="lazy" decoding="async" width="400" height="240" />
+            <span class="card__tag">Стеллажи</span>
+            <span class="card__gallery-hint">📷 Смотреть фото</span>
+          </div>
+          <div class="card__body">
+            <h3>Стеллаж для хранения колёс</h3>
+            <p>Длина 2м30см, ширина 60см, высота 2м. Под колёса 16 радиуса, вмещает 8 колёс. Нагрузка на полку — 100 кг. Матовая краска VIKI.</p>
+            <button class="btn btn--sm" onclick="event.stopPropagation(); openOrderModal()">Заказать</button>
           </div>
         </div>
 
@@ -281,6 +328,29 @@
           <span class="modal__contact-icon">🔵</span>
           <div><span class="modal__contact-label">ВКонтакте</span><span class="modal__contact-value">vk.com/id63243928</span></div>
         </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCT MODAL -->
+  <div class="product-modal" id="productModal" onclick="closeProductModal(event)">
+    <div class="product-modal__box">
+      <button class="product-modal__close" onclick="closeProductModal()">✕</button>
+      <div class="product-modal__gallery">
+        <div class="product-modal__main-img">
+          <img id="productMainImg" src="" alt="" />
+          <button class="product-modal__nav product-modal__nav--prev" onclick="changeProductImg(-1)">‹</button>
+          <button class="product-modal__nav product-modal__nav--next" onclick="changeProductImg(1)">›</button>
+          <span class="product-modal__counter" id="productCounter">1 / 1</span>
+        </div>
+        <div class="product-modal__thumbs" id="productThumbs"></div>
+      </div>
+      <div class="product-modal__info">
+        <span class="product-modal__tag" id="productTag"></span>
+        <h2 class="product-modal__title" id="productTitle"></h2>
+        <p class="product-modal__desc" id="productDesc"></p>
+        <ul class="product-modal__specs" id="productSpecs"></ul>
+        <button class="btn btn--primary btn--full" onclick="closeProductModal(); openOrderModal()">Заказать этот товар</button>
       </div>
     </div>
   </div>
